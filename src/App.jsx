@@ -24,11 +24,7 @@ const App = () => {
   return (
     <div className="app">
       <header className="header">
-        <img
-          src="/src/assets/netflix.png"
-          alt="Netflix Logo"
-          className="netflix-logo"
-        />
+        <img src="/netflix.png" alt="Netflix Logo" className="netflix-logo" />
       </header>
       {categories.length > 0 ? (
         categories.map((item, index) => (
