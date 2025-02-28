@@ -1,0 +1,36 @@
+.section {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.scroll-titles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.scroll-titles h2 {
+  font-size: 20px;
+  color: white;
+}
+
+.image-list {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto; /* Active le scroll horizontal */
+  white-space: nowrap;
+  padding-bottom: 10px;
+  scrollbar-width: none; /* Cache la barre de scroll sur Firefox */
+}
+
+.image-list::-webkit-scrollbar {
+  display: none; /* Cache la barre de scroll sur Chrome, Edge et Safari */
+}
+
+.image {
+  width: 200px;
+  height: 120px;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
